@@ -49,4 +49,15 @@ public class BlockEntity {
     public void setUnBlockReason(String unBlockReason) {
         this.unBlockReason = unBlockReason;
     }
+
+    @Override
+    public String toString() {
+        return "BlockEntity{" +
+                "id=" + id +
+                ", blockedAt=" + blockedAt +
+                ", blockReason='" + blockReason + '\'' +
+                ", unBlockedAt=" + unBlockedAt +
+                ", unBlockReason='" + unBlockReason + '\'' +
+                '}';
+    }
 }

@@ -32,4 +32,11 @@ public class BoardEntity {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "BoardEntity{" +
+                "id=" + id +
+                ", name='" + name + '\'';
+    }
 }

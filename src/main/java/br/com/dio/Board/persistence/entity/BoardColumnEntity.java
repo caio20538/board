@@ -47,4 +47,15 @@ public class BoardColumnEntity {
     public void setKind(BoardColumnKindEnum kind) {
         this.kind = kind;
     }
+
+    @Override
+    public String toString() {
+        return "BoardColumnEntity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", order=" + order +
+                ", kind=" + kind +
+                ", board=" + board +
+                '}';
+    }
 }
