@@ -6,6 +6,15 @@ public class BoardColumnEntity {
     private String name;
     private int order;
     private BoardColumnKindEnum kind;
+    private BoardEntity board = new BoardEntity();
+
+    public BoardEntity getBoard() {
+        return board;
+    }
+
+    public void setBoard(BoardEntity board) {
+        this.board = board;
+    }
 
     public Long getId() {
         return id;

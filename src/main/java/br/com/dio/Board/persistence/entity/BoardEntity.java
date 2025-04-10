@@ -1,9 +1,21 @@
 package br.com.dio.Board.persistence.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BoardEntity {
 
     private Long id;
     private String name;
+    private List<BoardColumnEntity> boardColumnEntities = new ArrayList<>();
+
+    public List<BoardColumnEntity> getBoardColumnEntities() {
+        return boardColumnEntities;
+    }
+
+    public void setBoardColumnEntities(List<BoardColumnEntity> boardColumnEntities) {
+        this.boardColumnEntities = boardColumnEntities;
+    }
 
     public Long getId() {
         return id;
