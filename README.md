@@ -9,7 +9,7 @@ Este projeto é um sistema simples de gerenciamento de tarefas em um **Board Kan
 - JDBC puro (sem JPA)
 - MySQL
 - Liquibase (controle de versão do banco de dados)
-- Maven
+- Gradle - Groovy
 
 ## 📐 Diagrama UML
 
