@@ -3,12 +3,19 @@ package br.com.dio.Board.persistence.entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import static br.com.dio.Board.persistence.entity.BoardColumnKindEnum.INITIAL;
+
 public class BoardEntity {
 
     private Long id;
     private String name;
     private List<BoardColumnEntity> boardColumnEntities = new ArrayList<>();
 
+    public BoardColumnEntity getInitalColumn(){
+        return boardColumnEntities.stream()
+                .filter(bc -> bc.getKind().equals(INITIAL))
+                .findFirst().orElseThrow();
+    }
     public List<BoardColumnEntity> getBoardColumnEntities() {
         return boardColumnEntities;
     }

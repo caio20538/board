@@ -1,10 +1,22 @@
 package br.com.dio.Board.persistence.entity;
 
+import static br.com.dio.Board.persistence.entity.BoardColumnKindEnum.INITIAL;
+
 public class CardEntity {
 
     private Long id;
     private String title;
     private String description;
+    private BoardColumnEntity boardColumn = new BoardColumnEntity();
+
+
+    public BoardColumnEntity getBoardColumn() {
+        return boardColumn;
+    }
+
+    public void setBoardColumn(BoardColumnEntity boardColumn) {
+        this.boardColumn = boardColumn;
+    }
 
     public Long getId() {
         return id;
